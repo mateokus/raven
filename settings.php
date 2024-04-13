@@ -75,5 +75,13 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    // Login page background setting.
+    $name = 'theme_raven/loginbackgroundimage';
+    $title = get_string('loginbackgroundimage', 'theme_raven');
+    $description = get_string('loginbackgroundimage_desc', 'theme_raven');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     $settings->add($page);
 }
