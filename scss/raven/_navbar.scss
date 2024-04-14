@@ -1,0 +1,51 @@
+.navbar {
+    background: $primary;
+}
+.navbar.fixed-top {
+    border-bottom: none;
+}
+.navbar .primary-navigation .navigation .nav-link {
+    color: #fff;
+}
+.navbar .primary-navigation .moremenu .nav-link:hover, .primary-navigation .moremenu .nav-link:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar .popover-region .nav-link {
+    color: #fff;
+}
+.navbar .usermenu .btn.dropdown-toggle {
+    color: #fff;
+}
+.navbar .editmode-switch-form label {
+    color: #fff;
+}
+.navbar .editmode-switch-form label.text-primary {
+    color: #fff !important;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+    border: 2px solid #fff;
+}
+.navbar .moremenu .nav-link.active {
+    border-bottom-color: transparent;
+}
+.navbar .primary-navigation .navigation .nav-link {
+    position: relative;
+}
+.navbar .primary-navigation .navigation .nav-link:before {
+    content: "";
+    position: absolute;
+    display: block;
+    opacity: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    transition: 0.3s;
+}
+.navbar .primary-navigation .navigation .nav-link:hover:before,
+.navbar .moremenu .nav-link.active:before {
+    opacity: 1;
+}
