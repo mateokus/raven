@@ -49,3 +49,7 @@
 .navbar .moremenu .nav-link.active:before {
     opacity: 1;
 }
+.notloggedin .navbar-nav .langmenu .btn,
+.notloggedin .navbar.fixed-top .usermenu .login a {
+    color: #fff;
+}
