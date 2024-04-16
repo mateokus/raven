@@ -9,3 +9,48 @@ h1,h2,h3,h4,h5,h6 {
 :focus {
     box-shadow: none !important;
 }
+
+.btn {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: $custom-color;
+    border-color: $custom-color;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+    background-color: $custom-color-dark;
+    border-color: $custom-color-dark;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: $custom-color;
+    border-color: $custom-color;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border-color: #000;
+    color: $custom-color;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
+    background-color: #fff;
+    border-color: #000;
+    color: $custom-color-dark;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+    background-color: #fff;
+    border-color: #000;
+    color: $custom-color;
+}
+
+.login-container h2.login-heading {
+    color: #fff;
+}
+
+.login-container {
+    color: #fff;
+}

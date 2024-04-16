@@ -1,0 +1,37 @@
+.login-wrapper {
+    justify-content: flex-start;
+}
+.login-container {
+    background-color: #161616;
+    box-shadow: none;
+}
+.pagelayout-login #page div[role="main"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-container .loginform {
+    text-align: center;
+}
+.login-container .form-control {
+    background-color: #000;
+    border: none;
+    color: #8D8D8D;
+}
+.login-container .form-control::placeholder {
+    color: #8D8D8D;
+}
+.login-container .action-menu-trigger .dropdown > a {
+    color: #fff;
+}
+.login-divider + .d-flex {
+    justify-content: center;
+}
+
+.login-container .login-form-forgotpassword a {
+    color: #fff;
+}
+
+.btn-primary#loginbtn {
+    pading: 10px 30px;
+}
