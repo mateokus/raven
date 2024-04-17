@@ -1,0 +1,53 @@
+.page-footer {
+    background: $primary;
+    color: #fff;
+}
+
+.page-footer a {
+    color: #fff;
+    transition: .3s;
+}
+
+.page-footer a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.page-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-footer .line-bottom {
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+.social i {
+    font-size: 23px;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .pagelayout-standard #page.drawers .footer-popover, body.limitedwidth #page.drawers .footer-popover {
+        max-width: 100%;
+        border-radius: 0;
+    }
+    #page-footer .container-fluid {
+        max-width: 1280px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

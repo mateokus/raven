@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .btn {
     font-weight: 700;
+    transition: .3s;
 }
 
 .btn-primary {
@@ -47,10 +48,33 @@ h1,h2,h3,h4,h5,h6 {
     color: $custom-color;
 }
 
-.login-container h2.login-heading {
-    color: #fff;
-}
-
-.login-container {
-    color: #fff;
+@media (min-width: 768px) {
+    .pagelayout-standard #page.drawers .main-inner, body.limitedwidth #page.drawers .main-inner {
+        max-width: 1280px;
+    }
+    #page.drawers {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #page.drawers .main-inner {
+        max-width: 1280px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    body#page-site-index.limitedwidth #page.drawers .main-inner, body#page-my-index.pagelayout-mydashboard.limitedwidth #page.drawers .main-inner,
+    body.pagelayout-course.limitedwidth #page.drawers .main-inner {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body#page-site-index.limitedwidth #page.drawers .main-inner #page-header, body#page-site-index.limitedwidth #page.drawers .main-inner .secondary-navigation, body#page-site-index.limitedwidth #page.drawers .main-inner #page-content, body#page-my-index.limitedwidth.pagelayout-mydashboard #page.drawers .main-inner #page-header, body#page-my-index.limitedwidth.pagelayout-mydashboard #page.drawers .main-inner .secondary-navigation, body#page-my-index.limitedwidth.pagelayout-mydashboard #page.drawers .main-inner #page-content, body.pagelayout-course.limitedwidth #page.drawers .main-inner #page-header, body.pagelayout-course.limitedwidth #page.drawers .main-inner .secondary-navigation, body.pagelayout-course.limitedwidth #page.drawers .main-inner #page-content {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    body#page-site-index.limitedwidth #page.drawers .main-inner #page-header, body#page-my-index.limitedwidth.pagelayout-mydashboard #page.drawers .main-inner #page-header, body.pagelayout-course.limitedwidth #page.drawers .main-inner #page-header {
+        margin-top: 15px;
+    }
 }

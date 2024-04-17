@@ -27,11 +27,15 @@
 .login-divider + .d-flex {
     justify-content: center;
 }
-
 .login-container .login-form-forgotpassword a {
     color: #fff;
 }
-
 .btn-primary#loginbtn {
     pading: 10px 30px;
+}
+.login-container h2.login-heading {
+    color: #fff;
+}
+.login-container {
+    color: #fff;
 }
