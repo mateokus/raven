@@ -48,6 +48,11 @@ h1,h2,h3,h4,h5,h6 {
     color: $custom-color;
 }
 
+.btn-outline-secondary:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
 @media (min-width: 768px) {
     .pagelayout-standard #page.drawers .main-inner, body.limitedwidth #page.drawers .main-inner {
         max-width: 1280px;

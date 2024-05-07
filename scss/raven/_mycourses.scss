@@ -1,0 +1,10 @@
+#page-my-index.page-mycourses {
+	.dashboard-card-deck .dashboard-card .dashboard-card-img {
+		height: 11rem;
+		transition: .3s;
+		background-size: 100%;
+	}
+	.dashboard-card-deck .dashboard-card > a:hover .dashboard-card-img {
+		background-size: 120%;
+	}
+}
