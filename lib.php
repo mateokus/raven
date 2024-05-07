@@ -52,6 +52,9 @@ function theme_raven_pluginfile($course, $cm, $context, $filearea, $args, $force
     if ($filearea === 'loginbackgroundimage') {
         return $theme->setting_file_serve('loginbackgroundimage', $args, $forcedownload, $options);
     }
+    if ($context->contextlevel == CONTEXT_SYSTEM && $filearea === 'banner_img') {
+        return $theme->setting_file_serve('banner_img', $args, $forcedownload, $options);
+    }
     else {
         send_file_not_found();
     }

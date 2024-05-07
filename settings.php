@@ -84,4 +84,43 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     $settings->add($page);
+
+    // Banner settings.
+    $page = new admin_settingpage('theme_raven_banner', get_string('banner', 'theme_raven'));
+
+    // Show banner
+    $name = 'theme_raven/banner_status';
+    $title = get_string('banner_status', 'theme_raven');
+    $description = get_string('banner_status_desc', 'theme_raven');
+    $default = 0;
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+    $banner = get_config('theme_raven', 'banner_status');
+
+    $name = 'theme_raven/banner_img';
+    $title = get_string('banner_img', 'theme_raven');
+    $description = get_string('banner_img_desc', 'theme_raven');
+    $opts = array('accepted_types' => array('.png', '.jpg', '.gif', '.webp', '.svg'), 'maxfiles' => 1);
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'banner_img', 0, $opts);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_raven/banner_header';
+    $title = get_string('banner_header', 'theme_raven');
+    $description = get_string('banner_header_desc', 'theme_raven');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_raven/banner_text';
+    $title = get_string('banner_text', 'theme_raven');
+    $description = get_string('banner_text_desc', 'theme_raven');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $settings->add($page);
 }

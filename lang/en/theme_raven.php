@@ -40,3 +40,14 @@ $string['region-side-pre'] = 'Right';
 $string['loginbackgroundimage'] = 'Login page background image';
 // Background image for login page.
 $string['loginbackgroundimage_desc'] = 'An image that will be stretched to fill the background of the login page.';
+
+// Banner
+$string['banner'] = 'Banner';
+$string['banner_status'] = 'Enable banner for frontpage';
+$string['banner_status_desc'] = 'Enable banner for frontpage';
+$string['banner_img'] = 'Banner image';
+$string['banner_img_desc'] = 'Please set banner image';
+$string['banner_header'] = 'Banner header';
+$string['banner_header_desc'] = 'Please set banner header';
+$string['banner_text'] = 'Banner text';
+$string['banner_text_desc'] = 'Please set banner text';
